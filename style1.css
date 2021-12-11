@@ -209,6 +209,9 @@ img{
 .nav-area-mobile{
     display: none;
 }
+.search-icon {
+    display: none;
+}
 
 @media only screen and (max-width: 732px) {
   
@@ -222,6 +225,7 @@ img{
     .mobileHeader {
         display: flex;
         justify-content: space-around;
+        flex-direction: row-reverse;
         align-items: center;
         width: 100%;
     }
@@ -249,4 +253,8 @@ img{
         display: block;
         transition: 2s;
     }
+    .search-icon {
+        display: block;
+    }
+   
   }
