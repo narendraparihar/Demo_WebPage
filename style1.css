@@ -1,3 +1,8 @@
+*{
+    font-family:'Times New Roman', Times, serif;
+}
+
+
 
 header {
     display: flex;
@@ -50,14 +55,31 @@ header {
 /*main part*/
 
 .main{
-    height:400px;
-    padding-top: 50px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top:50px;
+}
+.main_head {
+    width: 50%;
+}
+.main_subtext {
+    width: 40%;
+}
+
+.main_button {
+    width: 45%;
+}
+.main_head > p {
+    margin: 0;
+    padding: 0;
 }
 
 .text{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 70px;
+    font-size: 5rem;
     font-weight: bold;
     
 }
@@ -77,36 +99,33 @@ header {
     color: white;
     font-size: larger;
     padding: 20px;
-    padding-left: 30px;
+   /*  padding-left: 30px;
     padding-right: 30px;
-    margin: 20px;
+    margin: 20px; */
 }
 
 
 /*second*/
 
 .second{
-    height:100%;
-    width: 100%; 
-    padding:60px;
+    height:60%;
+    width: 90%; 
+    margin:50px 0px 20px 50px;
 }
 
 image{
     height:75%;
     width:50%;
-   
-   
     border-radius:50px;
+    margin: 500px;
 }
 
 img{
     border :0;
     border-radius:20px;
 }
-
-
-
-    .bottomDiv{
+    
+.bottomDiv{
         
         border-style: outset;
         width: 50%;
@@ -121,11 +140,30 @@ img{
 
 
 
+     .desc-head{
+        font-size:35px;
+        color: #1f1fce;
+        margin-left: 20px;
+    }
+
+    .desc-sec{
+        font-size: 55px;
+        margin-left: 20px;
+        font-weight: bold;
+    }
+
+    .desc-feat{
+        font-size: 35px;
+        margin-left: 20px;
+        color:grey;
+    }
+
+
 .icon{
     font-size:30px;
     float:inline-end;
-    margin-top:130px;
-    margin-left: 250px;;
+    margin-top:0px;
+    margin-left: 200px;;
     align-items: center;
     justify-content: center;
     color: gray;
@@ -144,15 +182,17 @@ img{
     border-radius: 50%;
   }
 
+ 
 
   /*third layer*/
   .writers {
-      width: 75%;
-      margin: auto;
+      width: 90%;
+      margin: 150px 50px 50px 50px;
       background-color: #1f1fce;
       color: white;
       padding: 3rem 0;
       border-radius: 20px;
+      align-items: center;
   }
 
 .headline {
@@ -213,7 +253,15 @@ img{
     display: none;
 }
 
+
+
+
+
 @media only screen and (max-width: 732px) {
+
+
+
+
   
     .nav, .header-search {
         display: none;
@@ -256,5 +304,99 @@ img{
     .search-icon {
         display: block;
     }
+
+    .main_head {
+        width: 80%;
+    }
+    .main_head > p {
+        font-size: 2.5rem;
+    }
+    .main_subtext {
+        width: 65%;
+    }
+    .main_subtext > p {
+        font-size: 1.2rem;
+    }
+    
+    .main_button {
+        width: 40%;
+
+    }
+    .main_head > p {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .text{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 5rem;
+        font-weight: bold;
+        
+    }
+    .image{
+        height:50%;
+        width:90%;
+        border-radius:20px;
+    }
+
+    img{
+        border :0;
+        border-radius:20px;
+    }
+
+
+
+
+
+        .bottomDiv{
+            border:1px solid blue;
+            width: 70%;
+            height: 180px;
+            position:relative;
+            bottom: 90px;
+            left :40px;
+            border-radius:10px;
+            background-color: white;
+            font-size:50px;
+         }
+
+       
+         .desc-head{
+             font-size:15px;
+             color: #1f1fce;
+             margin-left: 10px;
+         }
+
+         .desc-sec{
+             font-size: 20px;
+             margin-left: 10px;
+         }
+
+         .desc-feat{
+             font-size: 15px;
+             margin-left: 10px;
+         }
+
+
+         .icon{
+             display:flex;
+            font-size:30px;
+            float:inline-end;
+            margin-top:60px;
+            margin-left: 0px;
+            align-items: center;
+            justify-content: center;
+            color: gray;
+        }
    
-  }
+        .writers {
+            width: 95%;
+            margin: 80px 30px 50px 15px;
+            background-color: #1f1fce;
+            color: white;
+            padding: 3rem 0;
+            border-radius: 20px;
+           
+        }
+  
+    }
